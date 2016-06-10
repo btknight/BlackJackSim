@@ -1,0 +1,15 @@
+﻿<Window x:Class="BlackJackWin.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:bjw="clr-namespace:BlackJackWin"
+        Title="MainWindow" Height="350" Width="525">
+    <Window.Resources>
+        <bjw:MainWindowView x:Key="MainWindowView" />
+    </Window.Resources>
+    <Window.DataContext>
+        <Binding Source="{StaticResource MainWindowView}" />
+    </Window.DataContext>
+    <Grid>
+        
+    </Grid>
+</Window>
